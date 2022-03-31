@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Update Bowler List";
+}
+@model Mission13.Models.Bowler
+
+<h1>Update Bowler List</h1>
+
+<!-- Form connected to Database -->
+<form method="post">
+    <div asp-validation-summary="All"></div>
+
+    <label asp-for="BowlerFirstName"><strong>First Name:</strong></label><br />
+    <input asp-for="BowlerFirstName" /><br />
+
+    <label asp-for="BowlerMiddleInit"><strong>Middle Initial:</strong></label><br />
+    <input asp-for="BowlerMiddleInit" /><br />
+
+    <label asp-for="BowlerLastName"><strong>Last Name:</strong></label><br />
+    <input asp-for="BowlerLastName" /><br />
+
+    <label asp-for="BowlerAddress"><strong>Address:</strong></label><br />
+    <input asp-for="BowlerAddress" /><br />
+
+    <label asp-for="BowlerCity"><strong>City:</strong></label><br />
+    <input asp-for="BowlerCity" /><br />
+
+    <label asp-for="BowlerState"><strong>State:</strong></label><br />
+    <input asp-for="BowlerState" /><br />
+
+    <label asp-for="BowlerZip"><strong>Zip Code:</strong></label><br />
+    <input asp-for="BowlerZip" /><br />
+
+    <label asp-for="BowlerPhoneNumber"><strong>Phone Number:</strong></label><br />
+    <input asp-for="BowlerPhoneNumber" /><br />
+
+    <label asp-for="TeamID"><strong>Team ID:</strong></label><br />
+    <input asp-for="TeamID" /><br /><br />
+
+    <!--Submit Button-->
+    <button type="submit">Submit Form</button>
+</form>
