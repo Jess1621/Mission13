@@ -34,7 +34,7 @@
     <input asp-for="BowlerPhoneNumber" /><br />
 
     <label asp-for="TeamID"><strong>Team ID:</strong></label><br />
-    <input asp-for="TeamID" /><br /><br />
+    <input type="number" min="1" max="8" asp-for="TeamID" /><br /><br />
 
     <!--Submit Button-->
     <button type="submit">Submit Form</button>

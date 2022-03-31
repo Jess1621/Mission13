@@ -28,7 +28,7 @@ namespace Mission13.Models
         public string BowlerPhoneNumber { get; set; }
 
         //Foreign Key Relationship
-        [Required]
+        [Required(ErrorMessage = "Please enter a value between 1 and 8")]
         public int TeamID { get; set; }
         public Team Team { get; set; }
     }
